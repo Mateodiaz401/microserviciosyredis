@@ -1,0 +1,8 @@
+/node_modules
+public/uploads
+package-lock.json
+.env
+.vscode/
+.test
+.clinic
+test.js
