@@ -1,10 +1,11 @@
-exports.success = (req, res, message, status) => {
+exports.success = (req, res, data, message, status) => {
   const statusCode = status || 200;
   const statusMessage = message || "";
-  res.status(statusCode).send({
+  res.status(statusCode).json({
     error: false,
     status: statusCode,
     message: statusMessage,
+    data: data,
   });
 };
 
